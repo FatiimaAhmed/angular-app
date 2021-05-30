@@ -1,10 +1,14 @@
 <div class="container py-5">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-12 col-lg-4 mb-5">
       <app-pw></app-pw>
     </div>
-    <div class="col-12 col-lg-6">
-      <card></card>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-4" *ngFor="let post of posts"> 
+          <card [title]="post.title" [imgUrl]="post.imgUrl" [username]="post.username" [caption]="post.content"></card>
+        </div> 
+      </div>
     </div>
-  </div>
+  </div> -->
 </div>
