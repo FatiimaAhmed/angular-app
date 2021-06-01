@@ -1,0 +1,16 @@
+.card {
+    max-width: 450px;
+}
+
+.lead {
+    border: 2px dashed limegreen;
+    border-radius: 0.25rem;
+}
+
+.not-correct {
+    color: orangered;
+}
+
+.correct {
+    color: limegreen;
+}

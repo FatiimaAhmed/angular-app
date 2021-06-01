@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { lorem } from 'faker';
 
 @Component({
   selector: 'app-root',
@@ -26,4 +27,7 @@ export class AppComponent {
       content: 'running the marthone 🏃‍♀️'
      }
   ]; 
+
+  randomText: string = lorem.sentence();
+  
 }
