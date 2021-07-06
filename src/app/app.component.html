@@ -1,6 +1,6 @@
 <div class="container py-5">
-  <app-typing-challange [sentence]="randomText"></app-typing-challange>
-  <!-- <div class="row">
+  <!-- <app-typing-challange [sentence]="randomText"></app-typing-challange>
+  <div class="row">
     <div class="col-12 col-lg-4 mb-5">
       <app-pw></app-pw>
     </div>
@@ -12,4 +12,9 @@
       </div>
     </div>
   </div> -->
+  <div>
+    <h5>{{images[index].title}}</h5>
+    <img [src]="images[index].url" class="img-fluid" alt="">
+  </div>
+  <app-paginator [images]="images" (pageChanged)="onPageChange($event)"></app-paginator>
 </div>
