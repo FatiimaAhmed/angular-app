@@ -8,9 +8,13 @@
 }
 
 .not-correct {
-    color: orangered;
+    color: orangered !important;
 }
 
 .correct {
-    color: limegreen;
+    color: limegreen !important;
+}
+
+.black {
+    color: #000;
 }

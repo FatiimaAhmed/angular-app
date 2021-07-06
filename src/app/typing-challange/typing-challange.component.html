@@ -1,10 +1,10 @@
 <div class="card shadow-sm text-center">
     <div class="card-body">
         <p class="lead py-2">Typing challange</p>
-        <p class="lead py-2">{{ sentence }}</p>
+        <!-- <p class="lead py-2">{{ sentence }}</p> -->
         <div class="mb-3">
             <p class="text fw-bold">
-                <span *ngFor="let letter of sentence.split(''); let i = index;" [ngClass]="wrong ? 'not-correct' : 'correct'">{{ letter == enteredText ? letter : wrong}}</span>
+                <span *ngFor="let letter of sentence.split('');let i = index;" [class]="compare(letter, enteredText[i])">{{ letter }}</span>
             </p>
             <input class="form-control" type="text" (input)="onInput($any($event).target.value)" autofocus>
         </div>

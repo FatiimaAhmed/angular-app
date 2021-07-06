@@ -16,15 +16,19 @@ export class TypingChallangeComponent implements OnInit {
   }
 
   onInput(value: string) {
-    this.enteredText = value; 
-    // for (let index = 0; index < this.sentence.length; index++) {
-    //   if(this.sentence[index] == this.enteredText[index]) {
-    //     this.wrong = false;
-    //   } else {
-    //     this.wrong = true;
-    //     console.log('wrong')
-    //   }
-    // }
+    this.enteredText = value;
   }
 
+  compare(letter: string, text: string) {
+    let className = "";
+    if (text) {
+      if (letter == text) {
+        className = "correct";
+      } else if (letter !== text) {
+        className = "not-correct";
+      }
+    }
+
+    return className;
+  }
 }
